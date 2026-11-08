@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+  .card {
+    @apply w-[300px] flex flex-col gap-5 p-3 rounded-lg shadow-lg;
+  }
+  .card > h1 {
+    @apply text-xl font-bold;
+  }
+  .card > h1,
+  .card > p {
+    @apply w-full text-ellipsis overflow-hidden whitespace-nowrap;
+  }
+}
+
+.word-sp{
+  word-spacing: 0.1px;
+}
+
+.welcome{
+  word-spacing: 8px;
+}
+
+
+
