@@ -3,18 +3,18 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#070711] px-4 relative overflow-hidden">
 
-      {/* Background Glow */}
+   
       <div className="absolute top-[-180px] left-[-150px] w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[130px]" />
       <div className="absolute bottom-[-180px] right-[-150px] w-[400px] h-[400px] bg-purple-600/20 rounded-full blur-[130px]" />
 
-      {/* Login Card */}
+ 
       <div className="relative w-full max-w-md">
 
         <div className="rounded-3xl p-[1px] bg-gradient-to-br from-blue-500/50 via-purple-500/30 to-transparent shadow-2xl shadow-purple-900/20">
 
           <div className="rounded-3xl px-8 py-9 bg-[#10101b]/95 backdrop-blur-xl border border-white/5 text-white">
 
-            {/* Header */}
+     
             <div className="text-center mb-8">
 
               <div className="mx-auto mb-5 w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
@@ -36,7 +36,6 @@ export default function LoginPage() {
               onSubmit={(e) => e.preventDefault()}
             >
 
-              {/* Email */}
               <div>
                 <label
                   htmlFor="email"
@@ -54,7 +53,7 @@ export default function LoginPage() {
                 />
               </div>
 
-              {/* Password */}
+            
               <div>
                 <label
                   htmlFor="password"
@@ -72,7 +71,7 @@ export default function LoginPage() {
                 />
               </div>
 
-              {/* Options */}
+        
               <div className="flex items-center justify-between text-sm">
 
                 <label className="flex items-center gap-2 text-slate-400 cursor-pointer">
@@ -92,7 +91,7 @@ export default function LoginPage() {
 
               </div>
 
-              {/* Button */}
+         
               <button
                 type="submit"
                 className="w-full mt-3 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 shadow-lg shadow-blue-600/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-purple-600/30 hover:brightness-110 active:scale-[0.98]"
@@ -102,7 +101,6 @@ export default function LoginPage() {
 
             </form>
 
-            {/* Register */}
             <p className="text-center text-sm text-slate-500 mt-7">
               Don't have an account?
               <a

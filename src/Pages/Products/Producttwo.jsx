@@ -61,7 +61,7 @@ const Producttwo = () => {
     })();
   }, [param.id]);
 
-  // Loading
+
   if (producttwo.loading) {
     return (
       <div className="min-h-screen bg-[#080812] flex flex-col justify-center items-center gap-4">
@@ -77,7 +77,7 @@ const Producttwo = () => {
     );
   }
 
-  // Error
+ 
   if (producttwo.error) {
     return (
       <div className="min-h-screen bg-[#080812] flex justify-center items-center px-6">
@@ -93,12 +93,12 @@ const Producttwo = () => {
   return (
     <section className="relative min-h-screen bg-[#080812] py-20 px-6 overflow-hidden cursor-pointer">
 
-      {/* Background Glow */}
+     
       <div className="absolute top-20 left-1/4 w-96 h-96 bg-blue-600/10 blur-[140px] rounded-full" />
 
       <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-purple-600/10 blur-[140px] rounded-full" />
 
-      {/* Product Card */}
+     
       <div
         className="
           relative
@@ -116,7 +116,7 @@ const Producttwo = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-          {/* Product Image */}
+  
           <div
             className="
               h-[380px]
@@ -141,7 +141,7 @@ const Producttwo = () => {
             />
           </div>
 
-          {/* Product Info */}
+ 
           <div className="flex flex-col">
 
             <p className="text-blue-400 text-sm uppercase tracking-[0.2em] mb-4">
@@ -156,7 +156,7 @@ const Producttwo = () => {
               {producttwo.data.description}
             </p>
 
-            {/* Price */}
+ 
             <div className="mb-8">
               <p className="text-gray-500 text-sm mb-1">
                 Price
@@ -167,7 +167,6 @@ const Producttwo = () => {
               </p>
             </div>
 
-            {/* Button */}
             <div className="w-full">
               <Button />
             </div>
